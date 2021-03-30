@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sfu.mu_scanner.MainActivity">
+
+    <!--<android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="move to Protection Page"
+            android:orientation="vertical"/>
+
+        <TextView
+            android:id="@+id/textViewTagTextDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/text_tag_hint_description"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewPageData0"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage0"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTagTextDesc" />
+
+        <TextView
+            android:id="@+id/textViewPageData1"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage1"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData0" />
+
+        <TextView
+            android:id="@+id/textViewPageData2"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage2"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData1" />
+
+        <TextView
+            android:id="@+id/textViewPageData3"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage3"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData2" />
+
+        <TextView
+            android:id="@+id/textViewPageData4"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage4"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData3" />
+
+        <TextView
+            android:id="@+id/textViewPageData5"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage5"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData4" />
+
+        <TextView
+            android:id="@+id/textViewPageData6"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage6"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData5" />
+
+        <TextView
+            android:id="@+id/textViewPageData7"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage7"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData6" />
+
+        <TextView
+            android:id="@+id/textViewPageData8"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage8"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData7" />
+
+        <TextView
+            android:id="@+id/textViewPageData9"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage9"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData8" />
+
+        <TextView
+            android:id="@+id/textViewPageData10"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage10"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData9" />
+
+        <TextView
+            android:id="@+id/textViewPageData11"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage11"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData10" />
+
+        <TextView
+            android:id="@+id/textViewPageData12"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage12"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData11" />
+
+        <TextView
+            android:id="@+id/textViewPageData13"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage13"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData12" />
+
+        <TextView
+            android:id="@+id/textViewPageData14"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage14"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData13" />
+
+        <TextView
+            android:id="@+id/textViewPageData15"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage15"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData14" />
+
+        <TextView
+            android:id="@+id/textViewPage0"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_0"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTagTextDesc" />
+
+        <TextView
+            android:id="@+id/textViewPage1"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_1"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage0" />
+
+        <TextView
+            android:id="@+id/textViewPage2"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_2"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage1" />
+
+        <TextView
+            android:id="@+id/textViewPage3"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_3"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage2" />
+
+        <TextView
+            android:id="@+id/textViewPage4"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_4"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage3" />
+
+        <TextView
+            android:id="@+id/textViewPage5"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_5"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage4" />
+
+        <TextView
+            android:id="@+id/textViewPage6"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_6"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage5" />
+
+        <TextView
+            android:id="@+id/textViewPage7"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_7"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage6" />
+
+        <TextView
+            android:id="@+id/textViewPage8"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_8"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage7" />
+
+        <TextView
+            android:id="@+id/textViewPage9"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_9"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage8" />
+
+        <TextView
+            android:id="@+id/textViewPage10"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_10"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage9" />
+
+        <TextView
+            android:id="@+id/textViewPage11"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_11"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage10" />
+
+        <TextView
+            android:id="@+id/textViewPage12"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_12"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage11" />
+
+        <TextView
+            android:id="@+id/textViewPage13"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_13"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage12" />
+
+        <TextView
+            android:id="@+id/textViewPage14"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_14"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage13" />
+
+        <TextView
+            android:id="@+id/textViewPage15"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_15"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage14" />
+
+        <Switch
+            android:id="@+id/switchReadOnly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:checked="true"
+            android:text="@string/switch_read_only"
+            android:textAllCaps="true"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="move to Protection Page"
+            android:orientation="vertical"
+            android:id="@+id/btnProtection"/>
+
+        <TextView
+            android:id="@+id/textViewTagTextDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/text_tag_hint_description"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewPageData0"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage0"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTagTextDesc" />
+
+        <TextView
+            android:id="@+id/textViewPageData1"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage1"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData0" />
+
+        <TextView
+            android:id="@+id/textViewPageData2"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage2"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData1" />
+
+        <TextView
+            android:id="@+id/textViewPageData3"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage3"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData2" />
+
+        <TextView
+            android:id="@+id/textViewPageData4"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage4"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData3" />
+
+        <TextView
+            android:id="@+id/textViewPageData5"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage5"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData4" />
+
+        <TextView
+            android:id="@+id/textViewPageData6"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage6"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData5" />
+
+        <TextView
+            android:id="@+id/textViewPageData7"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage7"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData6" />
+
+        <TextView
+            android:id="@+id/textViewPageData8"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage8"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData7" />
+
+        <TextView
+            android:id="@+id/textViewPageData9"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage9"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData8" />
+
+        <TextView
+            android:id="@+id/textViewPageData10"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage10"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData9" />
+
+        <TextView
+            android:id="@+id/textViewPageData11"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage11"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData10" />
+
+        <TextView
+            android:id="@+id/textViewPageData12"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage12"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData11" />
+
+        <TextView
+            android:id="@+id/textViewPageData13"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage13"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData12" />
+
+        <TextView
+            android:id="@+id/textViewPageData14"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage14"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData13" />
+
+        <TextView
+            android:id="@+id/textViewPageData15"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_tag_hex_placeholder"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            app:layout_constraintStart_toEndOf="@+id/textViewPage15"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPageData14" />
+
+        <TextView
+            android:id="@+id/textViewPage0"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_0"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTagTextDesc" />
+
+        <TextView
+            android:id="@+id/textViewPage1"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_1"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage0" />
+
+        <TextView
+            android:id="@+id/textViewPage2"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_2"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage1" />
+
+        <TextView
+            android:id="@+id/textViewPage3"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_3"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage2" />
+
+        <TextView
+            android:id="@+id/textViewPage4"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_4"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage3" />
+
+        <TextView
+            android:id="@+id/textViewPage5"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_5"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage4" />
+
+        <TextView
+            android:id="@+id/textViewPage6"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_6"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage5" />
+
+        <TextView
+            android:id="@+id/textViewPage7"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_7"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage6" />
+
+        <TextView
+            android:id="@+id/textViewPage8"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_8"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage7" />
+
+        <TextView
+            android:id="@+id/textViewPage9"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_9"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage8" />
+
+        <TextView
+            android:id="@+id/textViewPage10"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_10"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage9" />
+
+        <TextView
+            android:id="@+id/textViewPage11"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_11"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage10" />
+
+        <TextView
+            android:id="@+id/textViewPage12"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_12"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage11" />
+
+        <TextView
+            android:id="@+id/textViewPage13"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_13"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage12" />
+
+        <TextView
+            android:id="@+id/textViewPage14"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_14"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage13" />
+
+        <TextView
+            android:id="@+id/textViewPage15"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_page_15"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPage14" />
+
+        <Switch
+            android:id="@+id/switchReadOnly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:checked="true"
+            android:text="@string/switch_read_only"
+            android:textAllCaps="true"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+</ScrollView>

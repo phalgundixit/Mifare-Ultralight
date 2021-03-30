@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">MU-SCANNER</string>
+
+    <string name="message_nfc_not_enabled">NFC IS NOT ENABLED!</string>
+    <string name="message_nfc_not_supported">NFC IS NOT SUPPORTED!</string>
+
+    <string name="message_read_new_tag">New Tag Found - Tag Added!</string>
+    <string name="message_read_old_tag">Existing Tag Found - No Action!</string>
+    <string name="message_overwrite_tag">Existing Tag Found - Over-Writing Tag!</string>
+
+    <string name="message_read_tag_error">ERROR - Reading Tag!</string>
+    <string name="message_write_tag_error">ERROR - Writing Tag!</string>
+    <string name="message_write_log_error">ERROR - Writing Log!</string>
+
+    <string name="switch_read_only">Read-Only</string>
+
+    <string name="text_tag_hint_description">Tap Compass Ticket...</string>
+    <string name="text_tag_hex_placeholder">00-00-00-00</string>
+
+    <string name="text_page_0">Page 0 (UID):</string>
+    <string name="text_page_1">Page 1 (UID):</string>
+    <string name="text_page_2">Page 2 (LOCK):</string>
+    <string name="text_page_3">Page 3 (OTP):</string>
+    <string name="text_page_4">Page 4 (DATA):</string>
+    <string name="text_page_5">Page 5 (DATA):</string>
+    <string name="text_page_6">Page 6 (DATA):</string>
+    <string name="text_page_7">Page 7 (DATA):</string>
+    <string name="text_page_8">Page 8 (DATA):</string>
+    <string name="text_page_9">Page 9 (DATA):</string>
+    <string name="text_page_10">Page 10 (DATA):</string>
+    <string name="text_page_11">Page 11 (DATA):</string>
+    <string name="text_page_12">Page 12 (DATA):</string>
+    <string name="text_page_13">Page 13 (DATA):</string>
+    <string name="text_page_14">Page 14 (DATA):</string>
+    <string name="text_page_15">Page 15 (DATA):</string>
+
+</resources>
